@@ -19,34 +19,47 @@
         <p>Please fill in your information and we'll be sending your order</p>
     </div>
 
-    <div class="labelWrapper">
-        <datalist id="smth"></datalist>
-        <label for="name"> Your name </label>
-        <label for="email">Your email</label>
-        <label for="phone">Phone *</label>
-        <label for="message">Message subject *</label>
-        <label for="message">Message *</label>
-    </div>
 
-    <div class="inputWrapper">
-        <input id="name"
-               type="text">
+    <datalist id="msgSubject"></datalist>
+
+
+    <label for="name"> Your name </label>
+    <input id="name"
+           type="text">
+
+    <label>
         <input type="text">
-        <input id="email"
-               type="email">
-        <input id="phone"
-               type="number">
-        <input type="number">
-        <input type="number">
-        <input type="number">
-        <textarea id="message"
-                  name="message"
-                  cols="30"
-                  rows="10"></textarea>
+    </label>
 
-        <hr>
-        <a href="#">SUBMIT FORM</a>
-    </div>
+    <label for="email">Your email</label>
+    <input id="email"
+           type="email">
+
+    <label for="phone">Phone *</label>
+    <input id="phone"
+           type="number">
+
+    <label>
+        <input type="number">
+    </label>
+
+    <label>
+        <input type="number">
+    </label>
+
+    <label for="msgSubjectInput"> Message subject *</label>
+    <input list="msgSubject"
+           id="msgSubjectInput">
+
+    <label for="message">Message *</label>
+    <textarea id="message"
+              name="message"
+              cols="30"
+              rows="10"></textarea>
+
+    <hr>
+    <a href="#">SUBMIT FORM</a>
+
 
 </form>
 
