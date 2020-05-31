@@ -45,6 +45,10 @@ h1, p{
     flex-wrap: wrap;
 }
 
+form div label{
+    width: 15%;
+    text-align: left;
+}
 
 
 
