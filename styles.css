@@ -63,6 +63,9 @@ label:nth-of-type(n+2){
 }
 
 
+.rowWrapper input:only-of-type, textarea:only-of-type {
+    flex-grow: 1;
+}
 
 
 
