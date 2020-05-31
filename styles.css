@@ -1,4 +1,8 @@
-
+input, textarea{
+    margin:0;
+    padding: 0;
+    border: 0;
+}
 
 body{
 
@@ -20,10 +24,9 @@ form{
 
     display: inline-flex;
     flex-wrap: wrap;
-
     padding: 2% 5%;
-
     width: 70%;
+
     background-color: transparent;
     box-shadow: 0 0 5px 4px rgba(0,0,0,0.75);
     color: white;
@@ -46,20 +49,15 @@ h1, p{
 }
 
 form div label{
-    width: 15%;
     text-align: left;
+    flex-basis: 300px;
+}
+
+.rowWrapper input,textarea{
+    flex-basis: 300px;
 }
 
 
-.inputWrapper{
-    width: 85%;
-    display: flex;
-    justify-content: center;
-}
-
-.inputWrapper textarea,input:only-child{
-    width: 100%;
-}
 
 
 

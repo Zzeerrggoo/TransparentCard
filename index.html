@@ -23,58 +23,56 @@
     <datalist id="msgSubject"></datalist>
 
     <div class="rowWrapper">
-        <label for="name"> Your name </label>
 
-        <div class="inputWrapper">
-            <input id="name"
-                   type="text">
-            <label>
-                <input type="text">
-            </label>
-        </div>
+        <label for="name"> Your name </label>
+        <input id="name"
+               type="text">
+        <label for="sureName"></label>
+        <input id="sureName"
+               type="text">
+
 
     </div>
 
     <div class="rowWrapper">
         <label for="email">Your email</label>
-        <div class="inputWrapper">
-            <input id="email"
-                   type="email">
-        </div>
+
+        <input id="email"
+               type="email">
+
     </div>
 
     <div class="rowWrapper">
-        <label for="phone">Phone *</label>
-        <div class="inputWrapper">
-            <input id="phone"
-                   type="number">
-            <label>
-                <input type="number">
-            </label>
+        <label for="phoneFirstThree">Phone *</label>
 
-            <label>
-                <input type="number">
-            </label>
-        </div>
+        <input id="phoneFirstThree"
+               type="number">
+
+        <label for="phoneSecondThree"></label>
+        <input id="phoneSecondThree"
+               type="number">
+
+        <label for="phoneLastFour"></label>
+        <input id="phoneLastFour"
+               type="number">
     </div>
 
     <div class="rowWrapper">
+
         <label for="msgSubjectInput"> Message subject *</label>
-        <div class="inputWrapper">
+        <input list="msgSubject"
+               id="msgSubjectInput">
 
-            <input list="msgSubject"
-                   id="msgSubjectInput">
-        </div>
     </div>
 
     <div class="rowWrapper">
+
         <label for="message">Message *</label>
-        <div class="inputWrapper">
         <textarea id="message"
                   name="message"
-                  cols="30"
-                  rows="10"></textarea>
-        </div>
+                  cols="30">
+        </textarea>
+
     </div>
 
     <div class="rowWrapper">
