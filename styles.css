@@ -1,4 +1,4 @@
-body,input, textarea, div{
+body,input, textarea, select, div{
     margin:0;
     padding: 0;
     border: 0;
@@ -16,7 +16,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 form{
@@ -34,13 +33,16 @@ form{
     font-family: sans-serif;
 }
 
-form input{
+form input,select, textarea{
     box-shadow: 0 0 7px 0 rgba(0,0,0,0.75);
+    background: white;
+}
+
+form input,select{
     min-height: 3em;
     font-size: inherit;
     padding-left: 1em;
 }
-
 
 h1, p{
     margin-right: auto;
@@ -68,7 +70,7 @@ form div label{
     flex-basis: 200px;
 }
 
-.rowWrapper input,textarea{
+.rowWrapper input,textarea,select{
     flex-basis: 100px;
     flex-shrink: 1;
 }
@@ -78,7 +80,9 @@ label:nth-of-type(n+2){
 }
 
 
-.rowWrapper input:only-of-type, textarea:only-of-type {
+.rowWrapper input:only-of-type,
+textarea:only-of-type,
+select:only-of-type {
     flex-grow: 1;
 }
 
@@ -139,10 +143,19 @@ a{
 }
 
 
-#sumbit{
+#submit{
     font-size: inherit;
     color: inherit;
     background: transparent;
     border: 2px solid white;
     border-top-width: 3px;
+}
+
+
+.selectCustom{
+    background: white;
+}
+
+input:invalid{
+    background-color: #e59a9a;
 }
