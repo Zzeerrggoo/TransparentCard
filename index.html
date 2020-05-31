@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
+
     <meta charset="UTF-8">
     <title>Contact form</title>
     <link rel="stylesheet"
@@ -19,19 +20,18 @@
         <p>Please fill in your information and we'll be sending your order</p>
     </div>
 
-
-    <datalist id="msgSubject"></datalist>
-
     <div class="rowWrapper">
         <label for="name"> Your name </label>
 
         <div class="nameInputsWrapper">
             <input id="name"
-                   type="text">
+                   type="text"
+                   placeholder="first name">
 
             <label for="sureName"></label>
             <input id="sureName"
-                   type="text">
+                   type="text"
+                   placeholder="last name">
         </div>
     </div>
 
@@ -39,22 +39,26 @@
     <div class="rowWrapper">
         <label for="email">Your email</label>
         <input id="email"
-               type="email">
+               type="email"
+               placeholder="your_mail@mail.com">
     </div>
 
     <div class="rowWrapper">
         <label for="phoneFirstThree">Phone *</label>
         <div class="phoneInputsWrapper">
             <input id="phoneFirstThree"
-                   type="number">
+                   type="number"
+                   placeholder="000">
 
             <label for="phoneSecondThree"></label>
             <input id="phoneSecondThree"
-                   type="number">
+                   type="number"
+                   placeholder="000">
 
             <label for="phoneLastFour"></label>
             <input id="phoneLastFour"
-                   type="number">
+                   type="number"
+                   placeholder="0000">
         </div>
     </div>
 
@@ -65,15 +69,22 @@
     </div>
 
     <div class="textArea">
-        <label for="message">Message *</label>
-        <textarea id="message"
-                  name="message"
-                  cols="30">
+        <div class="rowWrapper">
+            <label for="message">Message *</label>
+            <textarea id="message"
+                      name="message"
+                      rows="8">
         </textarea>
-
+        </div>
         <hr>
-        <a href="#">SUBMIT FORM</a>
 
+        <div class="rowWrapper">
+            <label for="sumbit"></label>
+            <input id="sumbit"
+                   type="submit"
+                   value="SUBMIT FORM">
+
+        </div>
     </div>
 
 

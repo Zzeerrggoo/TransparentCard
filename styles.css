@@ -10,8 +10,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 101vh;
-
+    height: 100vh;
 
     text-align: center;
     display: flex;
@@ -25,19 +24,21 @@ form{
     display: inline-flex;
     flex-wrap: wrap;
     padding: 2% 5%;
-    width: 65%;
+    width: 60%;
 
     background-color: transparent;
     box-shadow: 0 0 5px 4px rgba(0,0,0,0.75);
     color: white;
 
-    line-height: 2em;
     font-size: 20px;
     font-family: sans-serif;
 }
 
 form input{
     box-shadow: 0 0 7px 0 rgba(0,0,0,0.75);
+    min-height: 3em;
+    font-size: inherit;
+    padding-left: 1em;
 }
 
 
@@ -58,6 +59,7 @@ p{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -67,7 +69,7 @@ form div label{
 }
 
 .rowWrapper input,textarea{
-    flex-basis: 250px;
+    flex-basis: 100px;
     flex-shrink: 1;
 }
 
@@ -121,4 +123,26 @@ input~input{
 
 .rowWrapper:nth-child(n){
     margin-bottom: 1em;
+}
+
+.textArea{
+    width: 100%;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    border:3px solid white;
+    padding: 0.3em 0 ;
+
+}
+
+
+#sumbit{
+    font-size: inherit;
+    color: inherit;
+    background: transparent;
+    border: 2px solid white;
+    border-top-width: 3px;
 }
