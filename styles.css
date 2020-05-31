@@ -1,4 +1,4 @@
-input, textarea{
+input, textarea, div{
     margin:0;
     padding: 0;
     border: 0;
@@ -67,11 +67,20 @@ label:nth-of-type(n+2){
     flex-grow: 1;
 }
 
+.nameInputsWrapper{
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.nameInputsWrapper input{
+    flex-grow: 0.47;
+}
 
-
-
-
+.nameInputsWrapper label{
+    display: none;
+}
 
 
 
