@@ -22,43 +22,54 @@
 
     <datalist id="msgSubject"></datalist>
 
+    <div class="rowWrapper">
+        <label for="name"> Your name </label>
+        <input id="name"
+               type="text">
 
-    <label for="name"> Your name </label>
-    <input id="name"
-           type="text">
+        <label>
+            <input type="text">
+        </label>
+    </div>
 
-    <label>
-        <input type="text">
-    </label>
+    <div class="rowWrapper">
+        <label for="email">Your email</label>
+        <input id="email"
+               type="email">
+    </div>
 
-    <label for="email">Your email</label>
-    <input id="email"
-           type="email">
+    <div class="rowWrapper">
+        <label for="phone">Phone *</label>
+        <input id="phone"
+               type="number">
 
-    <label for="phone">Phone *</label>
-    <input id="phone"
-           type="number">
+        <label>
+            <input type="number">
+        </label>
 
-    <label>
-        <input type="number">
-    </label>
+        <label>
+            <input type="number">
+        </label>
+    </div>
 
-    <label>
-        <input type="number">
-    </label>
+    <div class="rowWrapper">
+        <label for="msgSubjectInput"> Message subject *</label>
+        <input list="msgSubject"
+               id="msgSubjectInput">
+    </div>
 
-    <label for="msgSubjectInput"> Message subject *</label>
-    <input list="msgSubject"
-           id="msgSubjectInput">
+    <div class="rowWrapper">
+        <label for="message">Message *</label>
+        <textarea id="message"
+                  name="message"
+                  cols="30"
+                  rows="10"></textarea>
+    </div>
 
-    <label for="message">Message *</label>
-    <textarea id="message"
-              name="message"
-              cols="30"
-              rows="10"></textarea>
-
-    <hr>
-    <a href="#">SUBMIT FORM</a>
+    <div class="rowWrapper">
+        <hr>
+        <a href="#">SUBMIT FORM</a>
+    </div>
 
 
 </form>
