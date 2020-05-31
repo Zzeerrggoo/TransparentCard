@@ -51,8 +51,15 @@ form div label{
 }
 
 
+.inputWrapper{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
 
-
+.inputWrapper textarea,input:only-child{
+    width: 100%;
+}
 
 
 
