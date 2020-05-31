@@ -50,14 +50,17 @@ h1, p{
 
 form div label{
     text-align: left;
-    flex-basis: 300px;
+    flex-basis: 200px;
 }
 
 .rowWrapper input,textarea{
-    flex-basis: 300px;
+    flex-basis: 250px;
+    flex-shrink: 1;
 }
 
-
+label:nth-of-type(n+2){
+    display: none;
+}
 
 
 
