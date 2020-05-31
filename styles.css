@@ -10,7 +10,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 101vh;
 
 
     text-align: center;
@@ -25,15 +25,28 @@ form{
     display: inline-flex;
     flex-wrap: wrap;
     padding: 2% 5%;
-    width: 70%;
+    width: 65%;
 
     background-color: transparent;
     box-shadow: 0 0 5px 4px rgba(0,0,0,0.75);
     color: white;
+
+    line-height: 2em;
+    font-size: 20px;
+    font-family: sans-serif;
 }
+
+form input{
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.75);
+}
+
 
 h1, p{
     margin-right: auto;
+}
+
+p{
+    margin-bottom: 2em;
 }
 
 .textWrapper{
@@ -102,3 +115,10 @@ label:nth-of-type(n+2){
     flex-grow: 0.50;
 }
 
+input~input{
+    margin-left: 2em;
+}
+
+.rowWrapper:nth-child(n){
+    margin-bottom: 1em;
+}
