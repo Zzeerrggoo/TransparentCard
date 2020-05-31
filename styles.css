@@ -20,8 +20,20 @@ body{
 form{
 
     display: inline-flex;
-    height: 80%;
-    width: 80%;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+
+    height: 75%;
+    width: 70%;
     background-color: transparent;
     box-shadow: 0 0 5px 4px rgba(0,0,0,0.75);
+}
+
+h1, p{
+    margin-right: auto;
+}
+
+.textWrapper{
+    text-align: left;
+    width: 100%;
 }
