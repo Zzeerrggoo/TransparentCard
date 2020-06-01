@@ -4,20 +4,17 @@ body, input, textarea, select, div {
     border: 0;
 }
 
-body {
 
-    background-image: url("./assets/images/b28ff73520755530c07cb98cd4c20e0c.jpg");
+body {
+    background-image: url("./assets/images/landscapes-beachesy-ocean.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 form {
+
+    margin: 3em auto;
 
     /*form of form*/
     padding: 2% 5%;
@@ -40,7 +37,7 @@ form input, select, textarea {
 
 form input, select {
     min-height: 3em;
-    font-size: inherit;
+    font-size: calc(10px + 0.5vw);
     padding-left: 1em;
 }
 
@@ -56,14 +53,6 @@ label:nth-of-type(n+2) {
 
 p {
     margin-bottom: 2em;
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    border: 3px solid white;
-    padding: 0.3em 0;
 }
 
 .textWrapper {
@@ -135,14 +124,14 @@ select:only-of-type {
 }
 
 
-
-
 #submit {
+    padding: 0;
     font-size: inherit;
     color: inherit;
     background: transparent;
     border: 2px solid white;
     border-top-width: 3px;
+    cursor: pointer;
 }
 
 
