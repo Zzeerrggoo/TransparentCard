@@ -142,3 +142,7 @@ select:only-of-type {
 input:invalid {
     background-color: #ffc1c1;
 }
+
+input~input{
+    margin-left: 1em;
+}
