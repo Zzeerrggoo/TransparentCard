@@ -149,3 +149,13 @@ input:invalid {
 input~input{
     margin-left: 1em;
 }
+
+input:hover ,select:hover ,textarea:hover{
+    outline: 4px solid orange;
+}
+
+input:focus ,select:focus ,textarea:focus {
+    outline: 4px solid dodgerblue;
+}
+
+
