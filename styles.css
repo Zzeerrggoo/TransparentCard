@@ -123,6 +123,10 @@ select:only-of-type {
     width: 100%;
 }
 
+textarea{
+    padding: 1em;
+    font-size: inherit;
+}
 
 #submit {
     padding: 0;
@@ -157,5 +161,6 @@ input:hover ,select:hover ,textarea:hover{
 input:focus ,select:focus ,textarea:focus {
     outline: 4px solid dodgerblue;
 }
+
 
 
