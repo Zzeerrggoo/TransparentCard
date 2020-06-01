@@ -1,10 +1,10 @@
-body,input, textarea, select, div{
-    margin:0;
+body, input, textarea, select, div {
+    margin: 0;
     padding: 0;
     border: 0;
 }
 
-body{
+body {
 
     background-image: url("./assets/images/b28ff73520755530c07cb98cd4c20e0c.jpg");
     background-size: cover;
@@ -12,52 +12,66 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form{
+form {
 
-    display: inline-flex;
-    flex-wrap: wrap;
+    /*form of form*/
     padding: 2% 5%;
     width: 60%;
 
+    /*background*/
     background-color: transparent;
-    box-shadow: 0 0 5px 4px rgba(0,0,0,0.75);
-    color: white;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.75);
 
+    /*text*/
+    color: white;
     font-size: 20px;
     font-family: sans-serif;
 }
 
-form input,select, textarea{
-    box-shadow: 0 0 7px 0 rgba(0,0,0,0.75);
+form input, select, textarea {
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75);
     background: white;
 }
 
-form input,select{
+form input, select {
     min-height: 3em;
     font-size: inherit;
     padding-left: 1em;
 }
 
-h1, p{
-    margin-right: auto;
+form div label {
+    text-align: left;
+    flex-basis: 200px;
 }
 
-p{
+label:nth-of-type(n+2) {
+    display: none;
+}
+
+
+p {
     margin-bottom: 2em;
 }
 
-.textWrapper{
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    border: 3px solid white;
+    padding: 0.3em 0;
+}
+
+.textWrapper {
     text-align: left;
     width: 100%;
 }
 
-.rowWrapper{
+.rowWrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -65,20 +79,10 @@ p{
     flex-wrap: wrap;
 }
 
-form div label{
-    text-align: left;
+.rowWrapper input, textarea, select {
     flex-basis: 200px;
-}
 
-.rowWrapper input,textarea,select{
-    flex-basis: 100px;
-    flex-shrink: 1;
 }
-
-label:nth-of-type(n+2){
-    display: none;
-}
-
 
 .rowWrapper input:only-of-type,
 textarea:only-of-type,
@@ -86,64 +90,54 @@ select:only-of-type {
     flex-grow: 1;
 }
 
-.nameInputsWrapper{
+.nameInputsWrapper {
     flex-grow: 1;
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.nameInputsWrapper input{
+.nameInputsWrapper input {
     flex-grow: 0.5;
 }
 
-.nameInputsWrapper label{
+.nameInputsWrapper label {
     display: none;
 }
 
-.phoneInputsWrapper{
+.phoneInputsWrapper {
     flex-grow: 1;
     display: inline-flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.phoneInputsWrapper label{
+.phoneInputsWrapper label {
     display: none;
 }
 
-.phoneInputsWrapper input:nth-of-type(n){
+.phoneInputsWrapper input:nth-of-type(n) {
     flex-grow: 0.25;
 }
 
 
-.phoneInputsWrapper input:last-of-type{
+.phoneInputsWrapper input:last-of-type {
     flex-grow: 0.50;
 }
 
-input~input{
-    margin-left: 2em;
-}
 
-.rowWrapper:nth-child(n){
+.rowWrapper:nth-child(n) {
     margin-bottom: 1em;
 }
 
-.textArea{
+.textArea {
     width: 100%;
 }
 
-a{
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    border:3px solid white;
-    padding: 0.3em 0 ;
-
-}
 
 
-#submit{
+
+#submit {
     font-size: inherit;
     color: inherit;
     background: transparent;
@@ -152,10 +146,10 @@ a{
 }
 
 
-.selectCustom{
+.selectCustom {
     background: white;
 }
 
-input:invalid{
-    background-color: #e59a9a;
+input:invalid {
+    background-color: #ffc1c1;
 }
