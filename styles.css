@@ -132,6 +132,9 @@ select:only-of-type {
     border: 2px solid white;
     border-top-width: 3px;
     cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
