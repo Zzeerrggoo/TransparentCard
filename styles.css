@@ -144,6 +144,7 @@ textarea{
 
 .selectCustom {
     background: white;
+    cursor: pointer;
 }
 
 input:invalid {
